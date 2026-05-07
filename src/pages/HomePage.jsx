@@ -3,65 +3,48 @@ import { Link } from 'react-router-dom'
 const HomePage = () => {
   const featuredCards = [
     {
-      title: 'Chola Bronze of Nataraja',
-      period: '12th Century CE',
+      title: 'Barrack Daily-Life Objects',
+      period: '20th Century Prison Life',
       description:
-        'A temple-processional bronze representing cosmic dance and sacred metallurgy traditions of South India.',
+        'Original utensils, bedding materials, lanterns, uniforms, and ration tools showcasing the everyday conditions inside historic prison barracks.',
       image:
         'https://images.unsplash.com/photo-1577083288073-40892c0860a4?auto=format&fit=crop&w=900&q=80',
     },
     {
-      title: 'Mughal Court Miniature',
-      period: '17th Century CE',
+      title: 'Prisoner-Created Artwork',
+      period: 'Reform & Rehabilitation Exhibit',
       description:
-        'An intricate painting on wasli paper documenting courtly life, diplomacy, and artistic exchange.',
+        'Sketches, handwritten poetry, crafts, and paintings created by inmates, reflecting personal expression, reform initiatives, and emotional resilience.',
       image:
         'https://images.unsplash.com/photo-1577720580479-7d839d829c73?auto=format&fit=crop&w=900&q=80',
     },
     {
-      title: 'Indus Valley Seals',
-      period: 'c. 2500 BCE',
+      title: 'Execution Chamber Artifacts',
+      period: 'Historic Judicial Collection',
       description:
-        'Steatite seals engraved with script and motifs used in trade administration across urban settlements.',
+        'Preserved objects and historical documentation connected to the prison gallows, judicial procedures, and capital punishment practices of the era.',
       image:
         'https://images.unsplash.com/photo-1580130379624-3a069adbffc5?auto=format&fit=crop&w=900&q=80',
     },
   ]
 
-  const events = [
-    {
-      name: 'Curator Walkthrough: Echoes of Civilization',
-      time: 'Saturday, 4:00 PM',
-      detail: 'Gallery Hall A',
-    },
-    {
-      name: 'Hands-on Workshop: Ancient Scripts',
-      time: 'Sunday, 11:30 AM',
-      detail: 'Learning Studio 2',
-    },
-    {
-      name: 'Evening Lecture: Trade Routes and Empires',
-      time: 'Wednesday, 6:15 PM',
-      detail: 'Auditorium',
-    },
-  ]
 
   return (
     <section className="page">
       <div className="hero-banner">
         <div className="hero-overlay">
-          <p className="eyebrow">Welcome to the Museum</p>
-          <h2>Journey Through 5,000 Years of Human Creativity</h2>
+          <p className="eyebrow">EST. 1906 • HYDERABAD, TELANGANA</p>
+          <h2>Experience the History of Chanchalguda Jail</h2>
           <p>
-            Explore immersive galleries, rotating exhibitions, and digital storytelling that
-            connect objects with the people and cultures behind them.
+            Walk through the corridors of one of Hyderabad’s oldest colonial-era prisons. Now preserved as a heritage museum, Chanchalguda offers visitors an immersive journey through prison history, reform stories, and historical archives.
+
           </p>
           <div className="hero-actions">
             <Link to="/visit" className="btn-primary">
-              Plan Your Visit
+              Book Museum Visit
             </Link>
-            <Link to="/exhibitions" className="btn-secondary">
-              View Exhibitions
+            <Link to="/VisitRegistrationPage" className="btn-secondary">
+              Feel The Jail Experience
             </Link>
           </div>
         </div>
@@ -69,7 +52,7 @@ const HomePage = () => {
 
       <div className="section-head">
         <h3>Highlighted Artifacts</h3>
-        <p>Real collection highlights currently discussed in docent-led tours.</p>
+        <p>Curated collection highlights featured in guided heritage tours and historical interpretation sessions.</p>
       </div>
       <div className="grid cards-grid">
         {featuredCards.map((item) => (
@@ -84,18 +67,6 @@ const HomePage = () => {
         ))}
       </div>
 
-      <div className="section-head">
-        <h3>Upcoming Programs</h3>
-      </div>
-      <div className="grid two-col">
-        {events.map((event) => (
-          <article className="info-card event-card" key={event.name}>
-            <h4>{event.name}</h4>
-            <p className="event-time">{event.time}</p>
-            <p>{event.detail}</p>
-          </article>
-        ))}
-      </div>
     </section>
   )
 }

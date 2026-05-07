@@ -2,12 +2,11 @@ import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
-import ExhibitionsPage from './pages/ExhibitionsPage'
-import CollectionsPage from './pages/CollectionsPage'
-import VisitPage from './pages/VisitPage'
-import AboutPage from './pages/AboutPage'
+import VisitRegistrationPage from './pages/VisitRegistrationPage'
+import FeelTheJail from './pages/FeelTheJail'
 import NotFoundPage from './pages/NotFoundPage'
 import './App.css'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
@@ -16,11 +15,10 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/exhibitions" element={<ExhibitionsPage />} />
-          <Route path="/collections" element={<CollectionsPage />} />
-          <Route path="/visit" element={<VisitPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/VisitRegistrationPage" element={<VisitRegistrationPage />} />
+          <Route path="/feelthejail" element={<FeelTheJail />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
       <Footer />

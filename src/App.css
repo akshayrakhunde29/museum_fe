@@ -1,3 +1,286 @@
+/* ================= FEEL THE JAIL PAGE ================= */
+
+.feel-jail-page {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.feel-jail-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 60px;
+  border-radius: 20px;
+  background:
+    linear-gradient(
+      rgba(16, 16, 16, 0.72),
+      rgba(16, 16, 16, 0.72)
+    ),
+    url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1600&q=80')
+      center/cover no-repeat;
+
+  color: #f5f0e7;
+}
+
+.breadcrumb {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  color: #b4aa9b;
+}
+
+.feel-jail-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 18px;
+  color: #f5f0e7;
+}
+
+.feel-jail-hero p {
+  max-width: 700px;
+  line-height: 1.8;
+  color: #d5cdc0;
+}
+
+.rules-card {
+  background: white;
+  border-radius: 18px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  border-left: 5px solid #73825c;
+}
+
+.rules-card h3 {
+  margin-bottom: 20px;
+}
+
+.rules-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-left: 18px;
+  color: #5f574d;
+  line-height: 1.7;
+}
+
+.barracks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.barrack-card {
+  border: 1px solid #e6ddd1;
+  border-radius: 18px;
+  overflow: hidden;
+  background: white;
+}
+
+.barrack-header {
+  padding: 22px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-header {
+  background: #4c9b55a5;
+  color: white;
+}
+
+.green-header {
+  background: #7b8863;
+  color: white;
+}
+
+.barrack-header span {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+}
+
+.barrack-body {
+  padding: 24px;
+}
+
+.barrack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.barrack-tags p {
+  background: #eef0e8;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: #667253;
+}
+
+.barrack-description {
+  line-height: 1.8;
+  color: #5e5549;
+  margin-bottom: 22px;
+}
+
+.restriction-box {
+  padding-top: 18px;
+  border-top: 1px solid #ece3d8;
+  color: #6a6157;
+  line-height: 1.7;
+}
+
+.registration-card {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  border: 1px solid #ece3d8;
+}
+
+.registration-card h2 {
+  margin-bottom: 14px;
+}
+
+.registration-text {
+  margin-bottom: 40px;
+  color: #6a6258;
+}
+
+.jail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #262626;
+}
+
+.form-group input,
+.form-group select {
+  height: 54px;
+  border-radius: 12px;
+  border: 1px solid #d8d1c7;
+  padding: 0 16px;
+  font-size: 0.95rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.purpose-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.purpose-grid button {
+  border: 1px solid #d8d1c7;
+  background: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.agreement-box {
+  background: #f5f3ef;
+  padding: 18px;
+  border-radius: 12px;
+  line-height: 1.8;
+  color: #6c6459;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.draft-btn,
+.submit-btn {
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.draft-btn {
+  background: white;
+  border: 1px solid #d6cec2;
+}
+
+.submit-btn {
+  background: #151515;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .rules-card,
+  .barracks-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feel-jail-hero {
+    padding: 60px 30px;
+  }
+
+  .registration-card {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .feel-jail-page {
+    gap: 50px;
+  }
+
+  .feel-jail-hero {
+    padding: 50px 20px;
+  }
+
+  .feel-jail-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .rules-card {
+    padding: 28px 20px;
+  }
+
+  .registration-card {
+    padding: 24px 18px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .draft-btn,
+  .submit-btn {
+    width: 100%;
+  }
+
+  
+}
 .app-shell {
   display: flex;
   flex-direction: column;
@@ -14,7 +297,7 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  padding: 24px 32px;
+  padding: 20px 16px;
   border-bottom: 1px solid color-mix(in oklab, var(--border) 75%, transparent);
 }
 
@@ -76,7 +359,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .nav-link {
@@ -290,13 +573,13 @@
 }
 
 .site-footer {
-  padding: 24px 32px 30px;
+  padding: 24px 32px 60px;
   border-top: 1px solid var(--border);
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
   text-align: left;
-  background: color-mix(in oklab, var(--surface) 92%, white);
+  background: color-mix(in oklab, var(--surface) 82%, rgb(0, 0, 0));
 }
 
 .footer-col {
@@ -440,3 +723,330 @@
     grid-template-columns: 1fr;
   }
 }
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  animation: rise-up 0.6s ease both;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.contact-info > p {
+  color: var(--text);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.contact-detail {
+  margin-bottom: 28px;
+}
+
+.contact-detail h4 {
+  color: var(--text-h);
+  font-weight: 600;
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+}
+
+.contact-detail p {
+  color: var(--text);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.contact-form {
+  border: 1px solid color-mix(in oklab, var(--border) 82%, transparent);
+  border-radius: 14px;
+  padding: 32px;
+  background: color-mix(in oklab, var(--surface) 90%, white);
+  box-shadow: 0 10px 30px rgba(28, 20, 12, 0.07);
+}
+
+.contact-form h3 {
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+  color: var(--text-h);
+}
+
+.contact-form > p {
+  color: var(--text);
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  color: var(--text-h);
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text-h);
+  background: color-mix(in oklab, var(--bg) 95%, white);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent-border) 30%, transparent);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-submit {
+  width: 100%;
+  background: #1e1a16;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 8px;
+}
+
+.btn-submit:hover {
+  background: #2a2420;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(18, 12, 8, 0.25);
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+.contact-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-form {
+    padding: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner {
+    min-height: 240px;
+  }
+
+  /* Registration Form Styles */
+.registration-container {
+  max-width: 680px;
+  margin: 0 auto;
+  animation: rise-up 0.6s ease both;
+}
+
+.info-banner {
+  background: color-mix(in oklab, #e8c9a8 15%, white);
+  border: 1px solid color-mix(in oklab, #c9a877 50%, transparent);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+  color: #5a4a3a;
+  font-size: 0.9rem;
+}
+
+.info-banner p {
+  margin: 0;
+}
+
+.registration-form {
+  border: 1px solid color-mix(in oklab, var(--border) 82%, transparent);
+  border-radius: 14px;
+  padding: 32px;
+  background: color-mix(in oklab, var(--surface) 90%, white);
+  box-shadow: 0 10px 30px rgba(28, 20, 12, 0.07);
+}
+
+.form-section {
+  border: none;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.form-section:last-of-type {
+  margin-bottom: 24px;
+}
+
+.form-section legend {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-h);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.form-section-desc {
+  color: var(--text);
+  font-size: 0.9rem;
+  margin: 4px 0 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  color: var(--text-h);
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text-h);
+  background: color-mix(in oklab, var(--bg) 95%, white);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent-border) 30%, transparent);
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #d32f2f;
+}
+
+.error-text {
+  color: #d32f2f;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--text);
+  user-select: none;
+}
+
+.radio-label input[type="radio"] {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--text-h);
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid color-mix(in oklab, var(--border) 60%, transparent);
+}
+
+.btn-cancel {
+  background: transparent;
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background: color-mix(in oklab, var(--border) 30%, transparent);
+  border-color: var(--text-h);
+}
+
+.btn-cancel:active {
+  opacity: 0.8;
+}
+.registration-form {
+    padding: 20px;
+  }
+
+  .registration-container {
+    max-width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .btn-submit,
+  .btn-cancel {
+    width: 100%;
+  }
