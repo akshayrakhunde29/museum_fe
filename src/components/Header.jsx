@@ -3,10 +3,9 @@ import { useState } from 'react'
 
 const navItems = [
   { path: '/', label: 'Home', end: true },
-  { path: '/exhibitions', label: 'Exhibitions' },
-  { path: '/collections', label: 'Collections' },
-  { path: '/visit', label: 'Visit' },
-  { path: '/about', label: 'About' },
+  { path: '/VisitRegistrationPage', label: 'Museum Visit' },
+  { path: '/feelthejail', label: 'Feel the Jail' },
+  { path: '/contact', label: 'Contact Us' },
 ]
 
 const Header = () => {
@@ -20,8 +19,8 @@ const Header = () => {
     <header className="site-header glass-panel">
       <div className="brand-row">
         <div className="brand-block">
-          <p className="brand-kicker">City Heritage Trust</p>
-          <h1 className="brand-title">Museum of Living History</h1>
+          <p className="brand-kicker">Government of Telangana</p>
+          <h1 className="brand-title">Chanchalguda Jail Museum</h1>
         </div>
         <button
           type="button"

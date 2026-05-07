@@ -4,21 +4,20 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="footer-col">
-        <p className="footer-title">Museum of Living History</p>
+        <p className="footer-title">Chanchalguda Jail Museum</p>
         <p className="footer-text">
-          Preserving stories, objects, and culture for future generations through inclusive
-          exhibitions, education programs, and conservation.
+          Preserving prison heritage, historical records, and stories of reform through immersive exhibitions, guided experiences, and educational programs for future generations.
         </p>
       </div>
       <div className="footer-col footer-meta">
-        <p>Open Tue-Sun, 10:00 AM - 6:00 PM</p>
-        <p>123 Heritage Avenue, Old Town District</p>
-        <p>info@museumlivinghistory.org</p>
+        <p>Open Tuesday – Sunday, 9:00 AM – 5:30 PM</p>
+        <p>Chanchalguda Central Prison Museum
+Hyderabad, Telangana – 500 024</p>
+        <p>info@jailmuseum.telangana.gov.in</p>
       </div>
       <div className="footer-col footer-links">
-        <Link to="/visit">Plan Visit</Link>
-        <Link to="/exhibitions">Current Shows</Link>
-        <Link to="/collections">Collections Archive</Link>
+        <Link to="/museumvisit">Book Museum Visit</Link>
+        <Link to="/feelthejail">Feel The Jail Experience</Link>
       </div>
     </footer>
   )
